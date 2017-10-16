@@ -21,7 +21,7 @@ app.use(bodyParser.urlencoded({
 app.use(express.static("public"));
 
 // ========== Configure Database ==================
-mongoose.connect("mongodb://localhost/onionscraper");
+mongoose.connect("mongodb://heroku_2prn6994:ki29dh8hgtp0mtf1ncuagvjgti@ds125113.mlab.com:25113/heroku_2prn6994" { useMongoClient: true });
 var db = mongoose.connection;
 
 db.on("error", function(err) {
